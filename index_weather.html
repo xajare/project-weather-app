@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style_weather.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/89714e1d45.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather">
+        <div class="title">
+          <h1>Weather App</h1>
+        </div>
+        <div class="row weather-today">
+          <div class="col-1"></div>
+          <div class="col-4">
+            <form id="tipe-city">
+              <input id="city-button" type="button" value="Search" />
+              <input
+                id="city-input"
+                type="text"
+                placeholder="Enter a city"
+                autocomplete="on"
+              />
+            </form>
+          </div>
+          <div class="col-6">
+            <button id="current-location">Current Location</button>
+          </div>
+        </div>
+        <div class="row today-js">
+          <div class="col-1"></div>
+          <div class="col-6">
+            <h2>
+              <i class="fas fa-sun fa-today"></i
+              ><span id="city-searched"> Gorizia, Italy</span>
+            </h2>
+            <h2 id="weather-today-js">Tuesday 16:00</h2>
+            <div class="degrees-js">
+              <span id="degrees-today"> 19 </span>
+              <a href="#" class="degrees-measure" id="degrees-celsius">°C</a>
+              <span class="degrees-measure">|</span>
+              <a href="#" class="degrees-measure" id="degrees-fahrenheit">°F</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-6">
+            <h2>In the next days...</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2 tomorrow">
+            <h3>Tomorrow</h3>
+            <h2>16°C</h2>
+            <p class="text-end"><i class="fas fa-cloud-showers-heavy"></i></p>
+          </div>
+          <div class="col-2 day2">
+            <h3>01.09</h3>
+            <h2>23°C</h2>
+            <p class="text-end"><i class="fas fa-cloud-showers-heavy"></i></p>
+          </div>
+          <div class="col-2 day3">
+            <h3>02.09</h3>
+            <h2>16°C</h2>
+            <p class="text-end"><i class="fas fa-cloud-sun"></i></p>
+          </div>
+          <div class="col-2 day4">
+            <h3>03.09</h3>
+            <h2>16°C</h2>
+            <p class="text-end"><i class="fas fa-beer"></i></p>
+          </div>
+          <div class="col-2 day5">
+            <h3>04.09</h3>
+            <h2>16°C</h2>
+            <p class="text-end"><i class="fas fa-sun"></i></p>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script_weather.js"></script>
+  </body>
+</html>

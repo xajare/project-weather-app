@@ -1,0 +1,75 @@
+.weather {
+  margin-top: 30px;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  border-radius: 10px;
+}
+
+.title {
+  padding-top: 30px;
+}
+h1 {
+  text-align: center;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+h2,
+h3,
+p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.weather-today {
+  margin-top: 40px !important;
+  margin-bottom: 20px;
+}
+
+.fas {
+  color: #385170;
+}
+
+.fa-today {
+  color: hsl(54, 100%, 50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.today-js {
+  margin-bottom: 40px;
+}
+
+.tomorrow,
+.day2,
+.day3,
+.day4,
+.day5 {
+  border: solid 1px rgba(85, 85, 75, 0.3);
+  margin-bottom: 30px;
+}
+
+.h3,
+h3 {
+  font-size: 1.3em !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .h3,
+  h3 {
+    font-size: 0.8em !important;
+  }
+}
+
+p {
+  right: 0;
+}
+
+.degrees-measure {
+  vertical-align: top;
+  font-size: 15px;
+}
+
+#degrees-today {
+  font-size: 32px;
+}
